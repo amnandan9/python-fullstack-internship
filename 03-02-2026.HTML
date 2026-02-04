@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- DOCTYPE tells the browser that this document is written in HTML5 -->
+
+<html lang="en">
+<!-- <html> is the root element that wraps the entire web page
+     lang="en" specifies that the content language is English -->
+
+<head>
+    <!-- <head> contains meta information about the document -->
+
+    <meta charset="UTF-8">
+    <!-- This meta tag defines the character encoding as UTF-8
+         so that all characters and symbols display correctly -->
+
+    <title>Text Formatting Tags</title>
+    <!-- <title> sets the title of the web page shown on the browser tab -->
+</head>
+
+<body>
+<!-- <body> contains all the visible content of the web page -->
+
+    <!-- Anchor (<a>) tag is used to create a hyperlink
+         Here it wraps an image so the image acts like a clickable button
+         target="_blank" opens the link in a new browser tab -->
+    <a href="https://www.instagram.com" target="_blank">
+        <!-- <img> tag is used to display an image
+             src contains the online image URL
+             alt shows text if the image fails to load
+             height and width fix the image size -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+             alt="Instagram"
+             height="50"
+             width="50">
+    </a>
+
+    <!-- Facebook image link -->
+    <a href="https://www.facebook.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"
+             alt="Facebook"
+             height="50"
+             width="50">
+    </a>
+
+    <!-- WhatsApp image link -->
+    <a href="https://www.whatsapp.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+             alt="WhatsApp"
+             height="50"
+             width="50">
+    </a>
+
+    <!-- Snapchat image link -->
+    <a href="https://www.snapchat.com" target="_blank">
+        <img src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo"
+             alt="Snapchat"
+             height="50"
+             width="50">
+    </a>
+
+    <!-- LinkedIn image link -->
+    <a href="https://www.linkedin.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+             alt="LinkedIn"
+             height="50"
+             width="50">
+    </a>
+
+    <!-- Simple text hyperlink
+         When clicked, it redirects the user to Wikipedia -->
+    <br>
+    <a href="https://www.wikipedia.org">
+        Visit Wikipedia
+    </a>
+    <a href="https://www.google.com">
+        Visit Google
+    </a>
+
+    <!-- <p> tag is used to define a paragraph of text -->
+    <p>
+        In HTML, a list is a collection of items.
+        There are four types of lists in HTML:
+        ordered list, unordered list, nested list, and description list.
+        An ordered list supports attributes like <b>type</b>, <b>start</b>, and <b>reversed</b>.
+        The <b>type</b> attribute defines the numbering style.
+        By default, ordered lists use numeric values.
+    </p>
+
+    <!-- <ol> represents an ordered list
+         type="1" means numeric numbering
+         start="1" specifies the starting number
+         reversed displays the list in reverse order -->
+    <ol type="1" start="1" reversed>
+        <!-- <li> represents each item in the list -->
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ol>
+
+    <!-- <ul> represents an unordered list
+         type="square" displays square bullets -->
+    <ul type="square">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+
+    <!-- Unordered list with disc bullets (default style) -->
+    <ul type="disc">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+
+    <!-- Unordered list with circle bullets -->
+    <ul type="circle">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+
+    <!-- Nested list: a list placed inside another list -->
+    <ol>
+        <li>Fruits
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Banana</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- <br> tag inserts a line break -->
+    <br>
+
+    <!-- <h2> defines a second-level heading -->
+    <h2>1. Java Full Stack</h2>
+
+    <!-- Unordered list showing course subjects -->
+    <ul>
+        <li>Java</li>
+        <li>Web</li>
+        <li>SQL</li>
+        <li>Aptitude</li>
+    </ul>
+
+    <body>
+
+    <h3>example 1</h3>
+    <!-- Ordered list with default numeric values -->
+    <ol>
+        <li>red</li>
+        <li>green</li>
+        <li>pink</li>
+    </ol>
+
+    <h3>example 2</h3>
+    <!-- Ordered list with fruits -->
+    <ol>
+        <li>apple</li>
+        <li>mango</li>
+        <li>pineapple</li>
+    </ol>
+
+    <h3>example 3</h3>
+    <!-- Unordered list with circle bullets -->
+    <ul type="circle">
+        <li>java</li>
+        <li>sql</li>
+        <li>web tech</li>
+    </ul>
+
+    <h3>example 4</h3>
+    <!-- Ordered list with uppercase Roman numerals starting from III -->
+    <ol type="I" start="3">
+        <li>red</li>
+        <li>green</li>
+        <li>pink
+            <!-- Nested unordered list -->
+            <ul type="circle">
+                <li>Deep pink</li>
+                <li>Hot pink</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>example 5</h3>
+    <!-- Unordered list with default solid bullets -->
+    <ul>
+        <li>apple</li>
+        <li>mango</li>
+        <li>pineapple</li>
+    </ul>
+
+    <h3>example 6</h3>
+    <!-- Nested unordered list -->
+    <ul>
+        <li>java
+            <ul type="circle">
+                <li>sql</li>
+            </ul>
+        </li>
+    </ul>
+
+
+</body>
+</html>
