@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version as HTML5 -->
+
+<html lang="en">
+<!-- Root element of the HTML page, lang="en" specifies English language -->
+
+<head>
+    <!-- Head section contains meta-information about the document -->
+
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 to support all characters -->
+
+    <title>HTML List Examples</title>
+    <!-- Title of the webpage shown on the browser tab -->
+</head>
+
+<body>
+<!-- Body contains all visible content of the webpage -->
+
+    <!-- Table tag is used to create a table -->
+    <!-- border adds border thickness -->
+    <!-- cellspacing adds space between cells -->
+    <!-- cellpading (intended cellpadding) adds space inside the cells -->
+    <table border="2" cellspacing="10" cellpading="10">
+        <!-- Table row -->
+        <tr>
+            <!-- Table data (cell) -->
+            <td>2</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <!-- Another table with different border and spacing -->
+    <table border="5" cellspacing="5" cellpading="5">
+        <tr>
+            <td>5</td>
+            <td>56</td>
+            <td>86</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>7</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>79</td>
+            <td>9</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <!-- Heading tag to give title for the table -->
+    <h2>Table With Uncollapsed Border</h2>
+
+    <!-- Table with heading cells -->
+    <table border="2" cellspacing="5" cellpading="5">
+        <tr> 
+            <!-- th represents table heading cell -->
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Email Address</th> 
+        </tr>
+        <tr>
+            <td>Anna Fitzgerald</td>
+            <td>Staff Water</td>
+            <td>example@company.com</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>Mareting Manager</td>
+            <td>example@company2.com</td>
+        </tr>
+        <tr>
+            <td>Zenda Grace</td>
+            <td>CEO</td>
+            <td>example@company3.com</td>
+        </tr>
+
+    <!-- Table tag starts but is not closed here -->
+    <table>
+
+        <!-- Heading for timetable -->
+        <h2>TIME TABLE</h2>
+
+        <!-- Table header row -->
+        <tr>
+            <th>Day/Period</th>
+            <th>I<br>9:30-10:20</th>
+            <!-- <br> is used to break line inside a cell -->
+            <th>II<br>10:20-11:10</th>
+            <th>III<br>11:10-12:00</th>
+            <th>12:00-12:40</th>
+            <th>IV<br>12:40-1:30</th>
+            <th>V<br>1:30-2:20</th>
+            <th>VI<br>2:20-3:10</th>
+            <th>VII<br>3:10-4:00</th>
+        </tr>
+
+        <!-- Row for Monday -->
+        <tr>
+            <th>Monday</th>
+            <td>Eng</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <!-- rowspan merges the cell vertically across multiple rows -->
+            <td rowspan="6" class="lunch">LUNCH</td>
+            <!-- colspan merges multiple columns -->
+            <td colspan="2">LAB</td>
+            <td></td>
+            <td>Phy</td>
+        </tr>
+
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="3">LAB</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td>SPORTS</td>
+        </tr>
+
+        <tr>
+            <th>Wednesday</th>
+            <td>Mat</td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="2">LIBRARY</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>Thursday</th>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3">LAB</td>
+            <td>Mat</td>
+        </tr>
+
+        <tr>
+            <th>Friday</th>
+            <td colspan="3">LAB</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td>Eng</td>
+            <td>Phy</td>
+        </tr>
+
+        <tr>
+            <th>Saturday</th>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td colspan="3">SEMINAR</td>
+            <td>SPORTS</td>
+        </tr>
+    </table>
+
+    <!-- Heading for second timetable -->
+    <h2>TIME TABLE</h2>
+
+    <!-- Table with proper cellpadding, cellspacing and borders -->
+    <table border="3" cellspacing="10" cellpadding="10">
+
+        <tr>
+            <th>Day/Period</th>
+            <th>I<br>9:30-10:20</th>
+            <th>II<br>10:20-11:10</th>
+            <th>III<br>11:10-12:00</th>
+            <th>12:00-12:40</th>
+            <th>IV<br>12:40-1:30</th>
+            <th>V<br>1:30-2:20</th>
+            <th>VI<br>2:20-3:10</th>
+            <th>VII<br>3:10-4:00</th>
+        </tr>
+
+        <tr>
+            <th>Monday</th>
+            <td>Eng</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <!-- align="center" aligns text inside cell -->
+            <td rowspan="6" align="center">
+                L<br>U<br>N<br>C<br>H
+            </td>
+            <td colspan="2">LAB</td>
+            <td></td>
+            <td>Phy</td>
+        </tr>
+
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="3">LAB</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td>SPORTS</td>
+        </tr>
+
+        <tr>
+            <th>Wednesday</th>
+            <td>Mat</td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="2">LIBRARY</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>Thursday</th>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3">LAB</td>
+            <td>Mat</td>
+        </tr>
+
+        <tr>
+            <th>Friday</th>
+            <td colspan="3">LAB</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td>Eng</td>
+            <td>Phy</td>
+        </tr>
+
+        <tr>
+            <th>Saturday</th>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td colspan="3">SEMINAR</td>
+            <td>SPORTS</td>
+        </tr>
+    </table>
+
+    <!-- rowspan is used to merge rows vertically
+         colspan is used to merge columns horizontally -->
+
+    <!-- Complex table demonstrating rowspan and colspan -->
+    <table border="2" cellspacing="10" cellpadding="10" width="90%">
+
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+            <td rowspan="2">3</td>
+            <td colspan="2" rowspan="2">4</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">5</td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td colspan="2">9</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">11</td>
+            <td colspan="3">12</td>
+            <td rowspan="7">13</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">19</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">20</td>
+            <td colspan="2">21</td>
+        </tr>
+
+        <tr>
+            <td colspan="5">22</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">23</td>
+            <td colspan="2">24</td>
+            <td>25</td>
+            <td>26</td>
+        </tr>
+
+        <tr>
+            <td>27</td>
+            <td colspan="2">28</td>
+            <td>29</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
