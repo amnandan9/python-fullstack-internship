@@ -15,7 +15,6 @@ It is maintained as a documentation of daily class exercises, programming practi
 ## Repository Purpose
 This repository is created to track my progress and store the exercises and programs practiced throughout the course.
 
-## Note
-All files in this repository are for educational and learning purposes and reflect hands-on practice done during training sessions.
+> **Note**: All files in this repository are for educational and learning purposes and reflect hands-on practice done during training sessions.
 
 ---
