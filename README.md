@@ -1,21 +1,25 @@
-# Python Full Stack Development
+# Python Full Stack Internship
 
-This repository contains my learning and practice work completed during a Python Full Stack Development course.
-It is maintained as a documentation of daily class exercises, programming practice, and web development tasks completed during the learning process.
+This repository contains my learning and practice work completed during my Python Full Stack internship training at QSpiders (INCUB SELECTS), Mysore.
 
-## Topics Covered
-- Python fundamentals and core programming concepts  
-- Variables, identifiers, keywords, and built-in functions  
-- Basic Python programs and hands-on practice  
-- Introduction to web development concepts  
-- HTML basics, elements, and tags  
-- Working with links, images, and tables in HTML  
-- Full Stack development fundamentals  
+The repository is organized day-wise and includes basic Python programs, web technology practice files, and related exercises completed as part of the internship curriculum.
 
-## Repository Purpose
-This repository is created to track my progress and store the exercises and programs practiced throughout the course.
+## Internship Details
+- **Internship Title:** Python Full Stack  
+- **Training Institute:** QSpiders – INCUB SELECTS  
+- **Location:** Mysore  
+- **Focus Areas:** Python Programming, Web Technologies, Full Stack Fundamentals
+
+## Contents
+- Python fundamentals and core concepts  
+- Basic Python programs and shell practice  
+- Introduction to web development  
+- HTML basics and page initialization  
+- Front-end, middle-layer, and back-end concepts  
+
+## Structure
 
 ## Note
-All files in this repository are for educational and learning purposes and reflect hands-on practice done during training sessions.
+This repository is created for academic and internship learning purposes. The code reflects hands-on practice and training-based exercises.
 
 ---
