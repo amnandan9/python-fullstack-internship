@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form</title>
+</head>
+
+<body bgcolor="#00FFFF">
+
+    <h2 align="center">Addmission Form</h2>
+
+    <form>
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <table cellpadding="5" cellspacing="5">
+
+                <tr>
+                    <td><b>Registration No:</b></td>
+                    <td><input type="text" placeholder="Enter registration no"></td>
+
+                    <td><b>Student Name:</b></td>
+                    <td><input type="text" placeholder="Enter name"></td>
+                </tr>
+
+                <tr>
+                    <td><b>Father Name:</b></td>
+                    <td><input type="text" placeholder="Father name"></td>
+
+                    <td><b>E-mail ID:</b></td>
+                    <td><input type="email" placeholder="Enter email"></td>
+                </tr>
+
+                <tr>
+                    <td><b>Mother Name:</b></td>
+                    <td><input type="text" placeholder="Mother name"></td>
+
+                    <td><b>Date of Birth:</b></td>
+                    <td><input type="date"></td>
+                </tr>
+
+                <tr>
+                    <td><b>Aadhar Number:</b></td>
+                    <td><input type="text" placeholder="Aadhar number"></td>
+
+                    <td><b>Mobile Number:</b></td>
+                    <td><input type="text" placeholder="Enter number"></td>
+                </tr>
+
+            </table>
+
+            <br>
+
+            <b>Select Gender:</b>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+
+        </fieldset>
+
+
+        <br><br>
+
+        <!-- Education Qualification -->
+        <fieldset>
+            <legend>Education Qualification</legend>
+
+            <table border="1" cellpadding="5" cellspacing="0">
+
+                <tr>
+                    <th>Select Board</th>
+                    <th>Total Number</th>
+                    <th>Obtain Number</th>
+                    <th>Percentage</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <b>High School:</b>
+                        <select>
+                            <option>Select Board</option>
+                            <option>CBSE</option>
+                            <option>ICSE</option>
+                            <option>State Board</option>
+                        </select>
+                    </td>
+
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <b>Intermediate:</b>
+                        <select>
+                            <option>Select Board</option>
+                            <option>CBSE</option>
+                            <option>ICSE</option>
+                            <option>State Board</option>
+                        </select>
+                    </td>
+
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <b>Graduate:</b>
+                        <input type="text" placeholder="Input text">
+                    </td>
+
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+
+        <br><br>
+
+        <!-- Course Applied -->
+        <fieldset>
+            <legend>Course Applied</legend>
+
+            <b>Select course type of course:</b>
+
+            <select>
+                <option>Select course</option>
+                <option>Under Graduate</option>
+                <option>Post Graduate</option>
+            </select>
+
+            <br><br>
+
+            <b>Choose Under Graduate subject here....</b><br>
+            <input type="radio" name="ug"> BCA
+            <input type="radio" name="ug"> BA
+            <input type="radio" name="ug"> B.Com
+            <input type="radio" name="ug"> BBA
+            <input type="radio" name="ug"> LLB
+            <input type="radio" name="ug"> B.Sc
+
+            <br><br>
+
+            <b>Choose Post Graduate subject here....</b><br>
+            <input type="radio" name="pg"> MCA
+            <input type="radio" name="pg"> LLM
+            <input type="radio" name="pg"> M.Com
+            <input type="radio" name="pg"> M.Sc
+
+        </fieldset>
+
+
+        <br><br>
+
+        <!-- Declaration -->
+        <input type="checkbox">
+        I here by declare that the given above is true and correct to the best of my knowledge and belief.
+
+        <br><br>
+
+        <!-- Buttons -->
+        <center>
+            <button type="submit">Register</button>
+            <button type="reset">Clear</button>
+        </center>
+
+    </form>
+
+</body>
+</html>

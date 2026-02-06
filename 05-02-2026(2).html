@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+</head>
+
+<body bgcolor="#0b4f5c" text="white">
+
+    <h1 align="center">Application Form</h1>
+
+    <form>
+
+        <table align="center" cellpadding="10" cellspacing="10">
+
+            <!-- First Name and Last Name -->
+            <tr>
+                <td><b>First Name:</b></td>
+                <td><input type="text"></td>
+
+                <td><b>Last Name:</b></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <!-- Date of Birth and Age -->
+            <tr>
+                <td><b>Date of birth:</b></td>
+                <td><input type="date"></td>
+
+                <td><b>Age:</b></td>
+                <td><input type="number"></td>
+            </tr>
+
+            <!-- Gender and Email -->
+            <tr>
+                <td><b>Gender:</b></td>
+                <td>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+
+                <td><b>Email Address:</b></td>
+                <td><input type="email" placeholder="Enter email address"></td>
+            </tr>
+
+            <!-- Positions Available -->
+            <tr>
+                <td colspan="4">
+                    <b>Positions Available:</b>
+                    <input type="radio" name="position"> Junior Developer
+                    <input type="radio" name="position"> Mid-level Developer
+                    <input type="radio" name="position"> Senior Developer
+                </td>
+            </tr>
+
+            <!-- Programming Languages -->
+            <tr>
+                <td colspan="4">
+                    <b>Programming Languages:</b>
+                    <input type="checkbox"> Java
+                    <input type="checkbox"> JavaScript
+                    <input type="checkbox"> Python
+                </td>
+            </tr>
+
+            <!-- Password and Confirm Password -->
+            <tr>
+                <td><b>Password:</b></td>
+                <td><input type="password"></td>
+
+                <td><b>Confirm Password:</b></td>
+                <td><input type="password"></td>
+            </tr>
+
+            <!-- Buttons -->
+            <tr>
+                <td colspan="4" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>
