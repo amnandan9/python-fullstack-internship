@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version as HTML5 -->
+
+<html lang="en">
+<!-- Root element of the HTML page, lang="en" specifies English language -->
+
+<head>
+    <!-- Head section contains meta-information about the document -->
+
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 to support all characters -->
+
+    <title>Forms</title>
+    <!-- Title of the webpage shown on the browser tab -->
+</head>
+
+<body>
+<!-- Body contains all visible content of the webpage -->
+
+<!-- form tag is used to collect user input -->
+<!-- Forms are block-level elements -->
+<!-- Form elements like input, label, button are inline elements -->
+
+<form action="" style="width: 50%; margin: auto;margin: top 100px;">
+<!-- action attribute specifies where the form data will be sent -->
+<!-- style attribute is used for inline CSS styling -->
+
+<fieldset>
+<!-- fieldset is used to group related form elements inside a box -->
+
+    <legend>login</legend>
+    <!-- legend gives a title/caption for the fieldset -->
+
+    <lable for "username">username</lable>
+    <!-- label is used to describe the input field -->
+
+    <input type="text" name="" id="">
+    <!-- input tag is used to take user input -->
+    <!-- type="text" allows the user to enter normal text -->
+
+    <br><br>
+    <!-- br tag is used to break line and add spacing -->
+
+    <lable for "pwd">Password</lable>
+    <!-- label for password field -->
+
+    <input type="password" name="" id="">
+    <!-- type="password" hides the characters while typing -->
+
+    <br><br>
+
+    <lable for="email">Email</lable>
+    <!-- label for email input -->
+
+    <input type="email" name="" id="">
+    <!-- type="email" validates email format -->
+
+    <br><br>
+
+    <button type="Login">Login</button>
+    <!-- button tag is used to create a clickable button -->
+
+    <button type="submin">submit</button>
+    <!-- submit button is used to send form data -->
+
+<!-- Required attribute is used to tell the user it is compulsory -->
+</fieldset>
+
+<!-- Second form starts here -->
+
+<form action="" style="width: 50%; margin: auto;margin: top 100px;">
+<!-- Another form with different fieldset -->
+
+<fieldset>
+<!-- Grouping application form elements -->
+
+    <legend>Application Form</legend>
+    <!-- Title for this fieldset -->
+
+    <lable for="username">username</lable>
+    <!-- label for username -->
+
+    <input type="text" name="" id="">
+    <!-- text input field -->
+
+    <br><br>
+
+    <lable for="pwd">Password</lable>
+    <!-- label for password -->
+
+    <input type="password" name="" id="">
+    <!-- password input -->
+
+    <
+    <!-- invalid symbol present but kept as it is -->
+
+    <br><br>
+
+    <lable for="phone">Phone Number:</lable>
+    <!-- label for phone number (input missing here) -->
+
+    <label for="dob">Date of Birth:</label>
+    <!-- label for date input -->
+
+    <input type="date" name="dob" id="dob" required>
+    <!-- type="date" provides a date picker -->
+    <!-- required makes the field mandatory -->
+
+    <br><br>
+
+    <lable for="gender">Gender</lable>
+    <!-- label for gender selection -->
+
+    <input type="radio" name="male" id="general" value="male" required>
+    <!-- radio button allows selecting one option -->
+    <!-- required means user must choose -->
+
+    <label for="male">Male</lable>
+    <!-- label for male option -->
+
+    <input type="radio" name="female" id="general" value="female" required>
+    <!-- radio button for female option -->
+
+    <lable for="female">Female</lable>
+    <!-- label for female -->
+
+    <input type="radio" name="other" id="other" valu="other" required>
+    <!-- radio button for other option -->
+
+    <label for="other">other</label>
+    <!-- label for other option -->
+
+    <br><br>
+
+    <label for="address">Address: </label>
+    <!-- label for textarea -->
+
+    <textarea name="address" id="address" cols="20" rows="4" required></textarea>
+    <!-- textarea is used for multi-line text input -->
+    <!-- cols and rows define size -->
+    <!-- required makes it compulsory -->
+
+    <br><br>
+
+    <label for="state">Select States:</lable>
+    <!-- label for dropdown menu -->
+
+        <select name="State">
+        <!-- select tag creates a dropdown list -->
+
+        <option value="" selected>--Select State--</option>
+        <!-- option tag defines dropdown choices -->
+        <!-- selected makes this default option -->
+
+        <option value="Karnataka">Karnataka</option>
+        <option value="Tamil Nadu">Tamil Nadu</opttion>
+        <option value="Goa">Goa</option>
+        </select>
+        <!-- closing select tag -->
+
+        <br><br>
+
+     <label for="course">Select Course:</lable>
+     <!-- label for course dropdown -->
+
+        <select name="course">
+        <!-- dropdown list for courses -->
+
+        <option value="" selected>--Select Course--</option>
+        <option value="C++">C++</option>
+        <option value="Python">Python</opttion>
+        <option value="Java">Java</option>
+        </select>
+
+        <!-- option tag here is incomplete but kept as it is -->
+
+        <option value=""
+
+    <button type="Login">Login</button>
+    <!-- login button -->
+
+    <button type="submin">submit</button>
+    <!-- submit button -->
+
+<!-- Required attribute is used to tell the user it is compulsory -->
+
+</fieldset>
+<!-- fieldset ends here -->
+
+</form>
+<!-- form ends here -->
+
+</body>
+</html>
