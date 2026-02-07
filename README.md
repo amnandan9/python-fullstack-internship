@@ -11,7 +11,7 @@ It is maintained as a documentation of daily class exercises, programming practi
 - HTML basics, elements, and tags  
 - Working with links, images, and tables in HTML  
 - Full Stack development fundamentals
-- 
+  
 
 ## Repository Purpose
 This repository is created to track my progress and store the exercises and programs practiced throughout the course.
