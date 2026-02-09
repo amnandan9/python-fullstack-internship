@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>audio</title>
+</head>
+
+<body><!--
+    <audio src="./among-us-role-reveal-sound.mp3" controls></audio>
+    <audio src="./among-us-role-reveal-sound.mp3" controls muted></audio>
+    <audio src="./among-us-role-reveal-sound.mp3" controls loop></audio>
+    <video src=""
+
+ i frame tag is to mention youtube vedio or google map location 
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Audio, iFrame, Video Tags</title>
+</head>
+<body> -->
+
+    <h1>HTML Audio Tag Examples</h1>
+
+    <!-- 1. Audio with Autoplay -->
+    <h2>1. Audio Autoplay</h2>
+    <audio controls autoplay>
+        <source src="audiofile.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <br><br>
+
+    <!-- 2. Audio with Loop -->
+    <h2>2. Audio Loop</h2>
+    <audio controls loop>
+        <source src="audiofile.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <br><br>
+
+    <!-- 3. Audio Muted -->
+    <h2>3. Audio Muted</h2>
+    <audio controls muted>
+        <source src="audiofile.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <br><br>
+
+    <!-- Audio with All Common Attributes -->
+    <h2>Audio Tag with Multiple Features</h2>
+    <audio controls autoplay loop muted preload="auto">
+        <source src="audiofile.mp3" type="audio/mpeg">
+        <source src="audiofile.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <h1>HTML iFrame Tag Examples</h1>
+
+    <!-- 1. Embed YouTube Video -->
+    <h2>1. YouTube Video Embed</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eG51Chl-toE?si=99YJlgVtMXDW65Q2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br><br>
+
+    <!-- 2. Embed Google Map -->
+    <h2>2. Google Map Embed</h2>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086318224987!2d-122.4194156846816!3d37.77492927975944"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+    <hr>
+
+    <h1>HTML Video Tag Example</h1>
+
+    <!-- Video Upload from Desktop / Local File -->
+    <h2>Play Local Video File</h2>
+    <video width="600" height="400" controls>
+        <source src="myvideo.mp4" type="video/mp4">
+        <source src="myvideo.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+
+    <!-- Video with Autoplay, Loop, Muted -->
+    <h2>Video with Autoplay + Loop + Muted</h2>
+    <video width="600" height="400" controls autoplay loop muted>
+        <source src="myvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>
