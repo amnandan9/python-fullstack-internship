@@ -1,0 +1,11 @@
+/* Highlight Colour */
+.pink{
+    background-color: rgb(247, 11, 204);
+}
+/* compared to inter and external css based on order of occurance
+compare to inline and external inline is the priority
+comparet to inline, internal and external inline is the prority */
+
+body{
+    background-color: rgb(128, 239, 117);
+}
