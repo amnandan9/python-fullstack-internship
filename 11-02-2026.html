@@ -1,0 +1,77 @@
+<!--selecters are used to target an html element and applying the css
+we have 5 types of selectors
+1. simple selector
+2. combinator selectors
+3. sudoplas selecttors
+4. sudoelement selectors
+5. attribute selector-->
+
+
+<!--we have 5 was to target on html elements
+1. simple selector
+   a. ID Selector
+   b. class Selector
+   c. Tag Name Selector(Element Selector)
+   d. Universal Selector
+   e. Grouping Selector(Group Selector)
+
+a. id selector is used to target induvidual html element (used to target single html elements) it is represents with a single hash, induvidual elements
+
+b. class selector is used to target multiple html elements based up on class name, it is represents with a smbole (.)
+
+c. tag name selector is used to target html elements based upon target name
+
+Urouping selector is used to target multiple html elements based upon id
+based upon id class or tag
+-->
+<!--
+universal selector is used to target complete html page including body tag, and it is represents with an symbole (*)-->
+
+<!--recheck the content-->
+
+<!--
+4. sudoelement selectors
+   a. before
+   b. after
+   c. marker
+   d. first letter
+   e. first line
+   
+   
+   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Formatting Tags</title>
+   <!--inline css using id selector-->
+ <style>/*internal css*/
+       #para2 {
+        color: brown; font-size: 22px; /* internal css for id selector */
+       }
+
+       .classe{
+            background-color: blue; font-style: italic; /* internal css for class Selector */
+        }
+    </style>
+       
+
+    <link rel="stylesheet" href="11-02-2026.css"> <!--external css-->
+
+</head>
+<body>
+    
+<!-- Heading tags: Used to define headings, h1 is largest and h6 is smallest -->
+<h1 style="color: red; font-size: 30px;">Hi there</h1><!--inline css-->
+<p id="para" style="color: blueviolet; font-size: 20px;">Hi this is id selecto a type of simple 
+    selector using inline css</p><!--inline css using id sector-->
+<p id="para2">This paragraph is style using internal css with ID selector.</p><!--inernal css using id selector-->
+<p id="para3">This paragraph is style using internal css with ID selector.</p><!--external css using id selector-->
+
+<p class="classe">This is use of class selector</p>
+
+<h1 class="blue">hello</h1>
+<!--compared to inline and internal css inline will be the highest priorit-->
+</body>
+</html>

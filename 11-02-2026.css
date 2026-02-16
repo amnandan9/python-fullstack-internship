@@ -1,0 +1,7 @@
+#para3{ /*external css using id selector*/
+    color: aquamarine;
+    background-color: rgb(0, 121, 54);
+    font-size: 24px;
+    padding: 10px;
+}
+
