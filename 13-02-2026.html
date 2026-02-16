@@ -1,0 +1,99 @@
+<!--
+adjsen siblings are used to target first sibling ofan parent element and it is represents wtha symbole +
+general sibling - selector are used to target all tthe sibling elements of a parent elements
+-->
+<!-- combinator selector - the are used to target htmll elements based upon relationship
+ in combinator selector we have four was to target html elements
+    1.Descendant Selector(space)
+    2.Child Selector (>)
+    3.Adjacent Sibling Selector [+]
+    4.General Sibling Selector [~]
+
+1. Descendant Selector (space symbole)
+they are used to target children grand children & greater children of an parent elements, it represented with an (space)
+2. child selectors are used to target onl an children of an parent element, it is represented by(>)
+3. adjacent siblings selector - they are used to target first sibling of an parent element, it is represented by(+)
+4. general sibling selector are used totarget all sibling selector of parent element, it is represent b(~)
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Combinator Selectors</title>
+
+  <style>
+
+    /* ============================= */
+    /* 1. Descendant Selector (space) */
+    /* Selects ALL <p> inside <div> */
+    /* ============================= */
+    div p {
+      color: red;
+      font-size: 20px;
+    }
+
+    /* ============================= */
+    /* 2. Child Selector ( > ) */
+    /* Selects ONLY direct child <p> of <div> */
+    /* ============================= */
+    div > p {
+      background-color: lightyellow;
+      padding: 5px;
+    }
+
+    /* ============================= */
+    /* 3. Adjacent Sibling Selector ( + ) */
+    /* Selects ONLY the first <p> immediately after <h2> */
+    /* ============================= */
+    h2 + p {
+      color: blue;
+      font-weight: bold;
+    }
+
+    /* ============================= */
+    /* 4. General Sibling Selector ( ~ ) */
+    /* Selects ALL <p> after <h3> (siblings) */
+    /* ============================= */
+    h3 ~ p {
+      color: green;
+      font-style: italic;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Combinator Selectors Example</h1>
+
+  <!-- Descendant + Child Selector Example -->
+  <div>
+    <p>This is DIRECT child paragraph inside div (Child + Descendant).</p>
+
+    <section>
+      <p>This is NESTED paragraph inside section (Only Descendant applies).</p>
+    </section>
+  </div>
+
+  <hr>
+
+  <!-- Adjacent Sibling Selector Example -->
+  <h2>Adjacent Sibling Example</h2>
+  <p>This paragraph comes immediately after h2 (Styled).</p>
+  <p>This paragraph is not immediately after h2 (Not styled).</p>
+
+  <hr>
+
+  <!-- General Sibling Selector Example -->
+  <h3>General Sibling Example</h3>
+  <p>This paragraph is a sibling after h3 (Styled).</p>
+  <p>This paragraph is also a sibling after h3 (Styled).</p>
+
+</body>
+</html>
+
+
+<!-- 
+sudoplas selecttors - 
+ 

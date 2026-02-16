@@ -1,0 +1,127 @@
+<!-- 
+Pseudo-Class Selectors (Internal CSS): 2 types
+     1.structutre pcs
+       a. first child
+       b. left child
+       c. nth child
+     2.dynamic pcs
+       a. link
+       b. active
+       c. visited
+       d. hover
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Pseudo-Class Selectors</title>
+
+  <style>
+
+    /* ============================= */
+    /* 1. :hover */
+    /* Applies when mouse is over element */
+    /* ============================= */
+    button:hover {
+      background-color: green;
+      color: white;
+    }
+
+    /* ============================= */
+    /* 2. :active */
+    /* Applies when element is clicked */
+    /* ============================= */
+    button:active {
+      background-color: red;
+    }
+
+    /* ============================= */
+    /* 3. :visited */
+    /* Applies to visited links */
+    /* ============================= */
+    a:visited {
+      color: purple;
+    }
+
+    /* ============================= */
+    /* 4. :link */
+    /* Applies to unvisited links */
+    /* ============================= */
+    a:link {
+      color: blue;
+    
+    }
+
+    /* ============================= */
+    /* 5. :focus */
+    /* Applies when input box is selected */
+    /* ============================= */
+    input:focus {
+      border: 2px solid orange;
+      background-color: lightyellow;
+    }
+
+    /* ============================= */
+    /* 6. :first-child */
+    /* Styles first child element */
+    /* ============================= */
+    li:first-child {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* ============================= */
+    /* 7. :last-child */
+    /* Styles last child element */
+    /* ============================= */
+    li:last-child {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* ============================= */
+    /* 8. :nth-child() */
+    /* Styles specific child number */
+    /* ============================= */
+    li:nth-child(2) {
+      color: blue;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Pseudo-Class Selectors Example</h1>
+
+  <!-- Link Example -->
+  <h2>Link Pseudo-Classes</h2>
+  <a href="https://buildwithnandan.web.app">Visit My site</a>
+  <a href="https://Github.com/amnandan9">My Github</a>
+
+
+  <hr>
+
+  <!-- Button Example -->
+  <h2>Hover and Active Example</h2>
+  <button>Hover or Click Me</button>
+
+  <hr>
+
+ 
+  <h2>Focus Example</h2>
+  <input type="text" placeholder="Click here">
+
+  <hr>
+
+ 
+  <h2>First, Last, Nth Child Example</h2>
+  <ul>
+    <li>Item 1 (First Child)</li>
+    <li>Item 2 (Nth Child)</li>
+    <li>Item 3</li>
+    <li>Item 4 (Last Child)</li>
+  </ul>
+
+</body>
+</html>
