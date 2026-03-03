@@ -92,4 +92,625 @@ Webpage:
 Webpages can be segregated into 2 types:
 1) Static Webpage
 2) Dynamic Webpage
+
+
+Examples of N-Tier Websites
+--------------------------------
+- Flipkart
+- Amazon
+- Myntra
+
+Categories of Webpages
+--------------------------------
+1) Static Webpage
+   - Collection of webpages
+   - Example: College website
+   - Example: Basic online shopping site
+
+2) Dynamic Webpage
+   - Process: Data store + retrieve using backend
+   - Example: Online examination system
+
+
+Types of Tags in HTML
+--------------------------------
+1) Paired Tags
+   - Have opening tag and closing tag
+   - Example:
+     <html> </html>
+     <head> </head>
+     <body> </body>
+
+2) Unpaired Tags (Empty Tags)
+   - Have only opening tag
+   - No closing tag
+   - Example:
+     <br>
+     <hr>
+     <img>
+
+3) Structural Tags
+   - <html>
+   - <head>
+   - <body>
+
+
+HTML Basic Structure
+--------------------------------
+<html>
+  <head>
+    <title> Webpage Title </title>
+  </head>
+  <body>
+    Content goes here
+  </body>
+</html>
+
+
+Attributes in HTML
+--------------------------------
+- Used to provide additional information to elements
+- Written inside the opening tag
+- Syntax:
+  <tag attribute="value">
+
+Example:
+  <img src="image.jpg" alt="sample image">
+
+
+Anchor Tag
+--------------------------------
+Used to create hyperlinks
+
+Syntax:
+  <a href="URL"> Link Text </a>
+
+
+Lists in HTML
+--------------------------------
+1) Ordered List
+   <ol>
+     <li> Item </li>
+   </ol>
+
+2) Unordered List
+   <ul>
+     <li> Item </li>
+   </ul>
+
+3) Definition List
+   <dl>
+     <dt> Term </dt>
+     <dd> Definition </dd>
+   </dl>
+
+
+Block Level vs Inline Elements
+--------------------------------
+Inline Level Elements:
+- Occupy only required width
+- Can appear within other elements
+- Example:
+  <span>, <a>, <img>
+
+Block Level Elements:
+- Occupy full width
+- Start on new line
+- Example:
+  <div>, <p>, <h1> to <h6>
+
+
+Div and Span
+--------------------------------
+- <div> → Block level element
+- <span> → Inline level element
+
+
+HTML Tags (Basic Classification)
+--------------------------------
+In HTML, elements are classified into:
+
+1) Inline Level Elements
+2) Block Level Elements
+
+
+Inline Level Elements
+--------------------------------
+- Occupy only required width
+- Do not start on a new line
+- Can appear inside other elements
+- Example:
+  <span>, <a>, <img>, <b>, <i>
+
+
+Block Level Elements
+--------------------------------
+- Occupy full width of webpage
+- Always start on a new line
+- Example:
+  <div>, <p>, <h1> to <h6>, <ul>, <ol>
+
+
+Empty Tags
+--------------------------------
+- Also called void elements
+- Have only opening tag
+- No closing tag
+
+Example:
+  <br>
+  <hr>
+  <img>
+
+
+Attributes in HTML
+--------------------------------
+- Attributes are properties in HTML
+- Provide additional information
+- Written inside opening tag
+- Syntax:
+  <tag attribute="value">
+
+Example:
+  <img src="image.jpg" alt="Image">
+
+
+Image Tag
+--------------------------------
+Used to display image on webpage
+
+Syntax:
+  <img src="path" alt="text">
+
+Common Attributes:
+- src → path of image
+- alt → alternate text
+- width
+- height
+
+
+Lists in HTML
+--------------------------------
+There are 3 types of lists:
+
+1) Ordered List
+   <ol>
+     <li> Item </li>
+   </ol>
+
+2) Unordered List
+   <ul>
+     <li> Item </li>
+   </ul>
+
+3) Description List
+   <dl>
+     <dt> Term </dt>
+     <dd> Description </dd>
+   </dl>
+
+
+Tables in HTML
+--------------------------------
+Tables are used to display data in tabular format.
+
+Basic Structure:
+  <table>
+    <tr>
+      <th> Heading </th>
+    </tr>
+    <tr>
+      <td> Data </td>
+    </tr>
+  </table>
+
+Important Tags:
+- <table> → Creates table
+- <tr> → Table row (horizontal row)
+- <td> → Table data (cell)
+- <th> → Table heading (bold by default)
+
+
+Table Concepts
+--------------------------------
+- Collection of rows & columns is called a Table
+- Horizontal arrangement → Row
+- Vertical arrangement → Column
+- Cell → Intersection of row and column
+
+
+Cell Padding & Cell Spacing
+--------------------------------
+- cellpadding → space between cell border & content
+- cellspacing → space between cells
+
+Example:
+  <table cellpadding="10" cellspacing="5">
+
+
+Input Tag
+--------------------------------
+required attribute:
+- The content is mandatory
+- User must fill the field
+- Example:
+  <input type="text" required>
+
+
+Media Tags in HTML
+--------------------------------
+There are 4 media tags:
+
+1) Image Tag
+   - Used to insert an image
+   - <img>
+
+2) Audio Tag
+   - Used to insert audio
+   - <audio>
+
+3) Video Tag
+   - Used to insert video
+   - <video>
+
+4) Iframe Tag
+   - Used to embed external content
+   - <iframe>
+
+
+Audio Tag
+--------------------------------
+Syntax:
+  <audio src="audio.mp3" controls muted loop></audio>
+
+Common Attributes:
+- src → source of audio
+- controls → shows audio controls
+- muted → sound is muted by default
+- loop → repeats automatically
+
+
+Iframe Tag
+--------------------------------
+- Used to embed webpages from other websites
+- Used to embed YouTube videos and Google Maps location
+
+Example:
+  <iframe src="URL"></iframe>
+
+
+Semantic Tags
+--------------------------------
+Before Semantic Tags:
+- Only <div> was used for structure
+
+After Semantic Tags (HTML5):
+- <header>
+- <section>
+- <article>
+- <aside>
+- <footer>
+- <nav>
+- <table>
+- <form>
+
+Definition:
+Semantic tags are the tags which tell the purpose of the content.
+
+Note:
+Semantic tags were introduced in HTML5 version.
+
+
+Marquee Tag
+--------------------------------
+- Used to display content in motion format
+- Text moves from left to right or right to left
+
+Example:
+  <marquee> Moving Text </marquee>
+
+
+CSS
+--------------------------------
+CSS stands for Cascading Style Sheet.
+
+- CSS is used to apply colors and effects to webpages.
+- "Håkon Wium Lie" is the developer of CSS.
+- In the year 1996, CSS was developed.
+- Current version of CSS is CSS3.
+- File extension: .css
+
+
+Ways to Add CSS
+--------------------------------
+1) Inline CSS
+2) Internal CSS
+3) External CSS
+
+Priority Order:
+- Inline CSS has the highest priority.
+- Between internal and external CSS, priority depends on order of occurrence.
+- If all three are compared → Inline > Internal > External.
+
+
+Selectors in CSS
+--------------------------------
+Selectors are used to target HTML elements and apply CSS.
+
+There are 5 types of selectors:
+
+1) Simple Selector
+2) Combinator Selector
+3) Pseudo Class Selector
+4) Pseudo Element Selector
+5) Attribute Selector
+
+
+Simple Selectors
+--------------------------------
+Simple selectors have 5 ways to target an HTML element:
+
+a) ID Selector
+   - Used to target an individual HTML element.
+   - Represented by symbol: #
+   - Example: #idName
+
+b) Class Selector
+   - Used to target multiple HTML elements based on class name.
+   - Represented by symbol: .
+   - Example: .className
+
+c) Grouping Selector
+   - Used to target multiple elements together.
+   - Example: h1, p, div
+
+d) Tag Name Selector
+   - Used to target elements based on tag name.
+   - Represented by tag name.
+   - Example: p, div, h1
+
+e) Universal Selector
+   - Used to target the complete HTML page including body.
+   - Represented by symbol: *
+   - Example: *
+
+
+Pseudo Element Selectors
+--------------------------------
+Used to style specific parts of elements.
+
+Examples:
+- ::before → Inserts content before an element.
+- ::after → Inserts content after an element.
+- ::selection → Highlights selected content.
+- ::marker → Styles list item markers.
+- ::first-line → Styles first line of a paragraph.
+- ::first-letter → Styles first letter of text.
+
+
+Combinator Selectors
+--------------------------------
+Combinator selectors are used to define relationships between elements.
+
+1) Descendant Selector
+   - Targets all child elements inside a parent element.
+   - Represented by a space ( ).
+   - Example:
+     section p { }
+   - Targets all <p> inside <section> (children, grandchildren, etc.)
+
+2) Child Selector
+   - Targets only direct children of a parent element.
+   - Represented by symbol: >
+   - Example:
+     section > p { }
+   - Targets only immediate <p> children of <section>.
+
+3) Adjacent Sibling Selector
+   - Targets the immediate next sibling.
+   - Represented by symbol: +
+   - Example:
+     section + p { }
+   - Targets first <p> immediately after <section>.
+
+4) General Sibling Selector
+   - Targets all siblings after a specified element.
+   - Represented by symbol: ~
+   - Example:
+     section ~ p { }
+   - Targets all <p> siblings after <section>.
+
+
+Pseudo Class Selectors
+--------------------------------
+Pseudo classes define a special state of an element.
+
+Types:
+
+1) Structural Pseudo Classes
+   - :first-child
+   - :last-child
+   - :nth-child()
+
+2) Dynamic Pseudo Classes
+   - :link
+   - :active
+   - :visited
+   - :hover
+
+Example:
+  a:hover {
+    color: purple;
+  }
+
+
+Attribute Selectors
+--------------------------------
+Used to target elements based on attribute.
+
+Syntax:
+
+1) Tagname[attribute]
+   Example:
+     img[src]
+
+2) Tagname[attribute="value"]
+   Example:
+     img[alt="logo"]
+
+Example CSS:
+  img[alt="logo"] {
+    border-radius: 50%;
+  }
+
+
+Text Properties in CSS
+--------------------------------
+1) text-shadow
+   Syntax:
+     text-shadow: x y z color;
+   - x → horizontal value
+   - y → vertical value
+   - z → blur radius
+   - color → shadow color
+
+   Example:
+     text-shadow: 2px 2px 5px aqua;
+
+2) text-align
+   - Used to align text
+   - Values:
+     left
+     right
+     center
+     justify
+
+
+Font Properties
+--------------------------------
+- font-size → normal, small, large, px values
+- font-weight → 100–900, normal, bold, lighter
+- font-family → Arial, Times, etc.
+- font-style → normal, italic, oblique
+
+
+CSS Box Model (Golden Properties)
+--------------------------------
+- margin
+- border
+- padding
+- content
+
+These define the layout structure of elements.
+
+
+Background Properties
+--------------------------------
+- background-color
+- background-image
+- background-repeat
+    values: repeat, no-repeat
+- background-size
+    values: auto, contain, cover
+- background-position
+- background-attachment
+    values: scroll, fixed
+
+Used to customize background of elements.
+
+
+Border Properties
+--------------------------------
+- border-width
+- border-style
+    values: solid, dotted, double, groove, ridge, inset, outset
+- border-color
+
+Shorthand:
+  border: width style color;
+
+- border-radius
+  Used to create rounded corners.
+  Example:
+    border-radius: 50%;
+
+
+Colors in CSS
+--------------------------------
+Ways to define colors:
+
+1) Color Name
+   Example: red, blue
+
+2) Hex Code
+   Example: #ff0000
+
+3) RGB
+   Example: rgb(255, 0, 0)
+
+4) RGBA
+   Example: rgba(255, 0, 0, 0.5)
+   (alpha → opacity: 0 to 1)
+
+
+Gradients
+--------------------------------
+- linear-gradient
+- repeating-linear-gradient
+- radial-gradient
+- repeating-radial-gradient
+
+Used to apply multiple colors to an element.
+
+
+Display Properties
+--------------------------------
+Common values:
+- block
+- inline
+- inline-block
+- none
+- flex
+- grid
+
+display: block
+  → Converts inline element to block-level element.
+
+display: inline
+  → Converts block element to inline-level element.
+
+display: inline-block
+  → Behaves like inline but allows width & height.
+
+display: none
+  → Hides the element.
+
+display: flex
+  → Used to align items in one direction.
+  → Direction:
+      row
+      column
+
+
+Flex Container Properties
+--------------------------------
+- display: flex;
+- justify-content:
+    flex-start
+    center
+    flex-end
+    space-between
+    space-around
+- align-items:
+    flex-start
+    center
+    flex-end
+- flex-wrap:
+    wrap
+    nowrap
+- flex-direction:
+    row
+    row-reverse
+    column
+    column-reverse
 -->
