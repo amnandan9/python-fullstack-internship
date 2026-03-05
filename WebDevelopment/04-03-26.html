@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Declares the document type and tells the browser this is an HTML5 document -->
+
+<html lang="en">
+<!-- Root element of the HTML page, lang="en" means the page language is English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 so special characters display correctly -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive on mobile devices -->
+
+    <title>Multiple Containers</title>
+    <!-- Title of the webpage shown in the browser tab -->
+
+    <style>
+        /* CSS styling starts here */
+
+        body {
+            background-color: yellow;
+            /* Sets the background color of the whole webpage */
+        }
+
+        .main-container {
+            display: flex;
+            /* Uses Flexbox layout to arrange child elements in a row */
+
+            justify-content: space-around;
+            /* Adds equal space around each container */
+
+            margin-top: 50px;
+            /* Adds space from the top of the page */
+        }
+
+        .container {
+            width: 150px;
+            height: 150px;
+            /* Sets fixed size for each container */
+
+            background-color: cyan;
+            /* Default background color */
+
+            border: 1px solid black;
+            /* Adds a black border around each box */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Centers the text inside the container both horizontally and vertically */
+
+            transition: all 2s;
+            /* Applies smooth animation for all changes over 2 seconds */
+        }
+
+        .move-right-to-left:hover {
+            transform: translateX(-100px);
+            /* When hovered, this container moves 100px to the left */
+        }
+
+        .change-color:hover {
+            background-color: magenta;
+            /* Changes background color when hovered */
+        }
+
+        .rotate:hover {
+            transform: rotate(360deg);
+            /* Rotates the container completely when hovered */
+        }
+
+        .scale:hover {
+            transform: scale(1.5);
+            /* Enlarges the container to 1.5 times its size when hovered */
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Main content of the webpage -->
+
+    <div class="main-container">
+        <!-- Parent container that holds all the boxes -->
+
+        <div class="container">
+            <!-- Simple container with no hover effect -->
+            Container 1
+        </div>
+
+        <div class="container move-right-to-left">
+            <!-- Container that moves left when hovered -->
+            Container 2
+        </div>
+
+        <div class="container change-color">
+            <!-- Container that changes color on hover -->
+            Container 3
+        </div>
+
+        <div class="container rotate">
+            <!-- Container that rotates when hovered -->
+            Container 4
+        </div>
+
+        <div class="container scale">
+            <!-- Container that increases size when hovered -->
+            Container 5
+        </div>
+
+    </div>
+
+</body>
+</html>
