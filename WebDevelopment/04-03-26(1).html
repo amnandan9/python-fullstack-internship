@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Declares the document as HTML5 -->
+
+<html lang="en">
+<!-- Root element of the webpage, language set to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Defines the character encoding (UTF-8 supports most characters) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive for different screen sizes -->
+
+    <title>Document</title>
+    <!-- Title displayed in the browser tab -->
+
+    <style>
+        /* Styling for the section element */
+
+        section{
+            height: 50px;
+            /* Height of the section container */
+
+            width: 150%;
+            /* Width of section (larger than normal page width) */
+
+            border: 2px solid black;
+            /* Black border around the section */
+        }
+
+        /* Styling for the aside element (circle) */
+
+        aside{
+            height: 50px;
+            width: 50px;
+            /* Creates a square box */
+
+            border-radius: 50%;
+            /* Converts the square into a circle */
+
+            background-color: red;
+            /* Sets the circle color to red */
+
+            transition-property: all;
+            /* All properties will animate when changed */
+
+            transition-duration: 2s;
+            /* Animation takes 2 seconds */
+
+            transition-timing-function: ease-in-out;
+            /* Animation starts slow, speeds up, then slows again */
+
+            transition-delay: 1s;
+            /* Animation starts after 1 second delay */
+        }
+
+        /* Hover effect for the circle */
+
+        aside:hover{
+           transform: translateX(800px);
+           /* Moves the circle 800px to the right when hovered */
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Body contains visible webpage content -->
+
+    <section>
+        <!-- Section acts like a track/container -->
+
+        <aside></aside>
+        <!-- Red circle that moves when hovered -->
+
+    </section>
+
+</body>
+</html>
