@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Character encoding -->
+<meta charset="UTF-8">
+
+<!-- Makes page responsive on different screen sizes -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title of webpage -->
+<title>Animation Example</title>
+
+<style>
+
+/* Parent container */
+.parent{
+    height:400px;                 /* Height of the container */
+    width:600px;                  /* Width of the container */
+    border:3px solid black;       /* Border around container */
+
+    /* Makes this container the reference for absolutely positioned child */
+    position:relative;
+}
+
+/* Child box that will move */
+.child{
+    height:80px;                  /* Height of moving box */
+    width:80px;                   /* Width of moving box */
+    background:red;               /* Initial color */
+
+    /* Absolute positioning allows free movement inside parent */
+    position:absolute;
+}
+
+/* Animation will start only when mouse hovers on parent container */
+.parent:hover .child{
+    animation: movebox 6s linear infinite;
+
+    /* movebox → name of animation
+       6s → animation duration
+       linear → constant speed
+       infinite → repeats forever */
+}
+
+/* Keyframes define the movement steps of the animation */
+@keyframes movebox{
+
+    /* Start position (Top Left Corner) */
+    0%{
+        top:0;
+        left:0;
+        background:red;
+    }
+
+    /* Move to Top Right Corner */
+    25%{
+        top:0;
+        left:520px;               /* 600 - 80 = 520 (container width - box width) */
+        background:green;
+    }
+
+    /* Move to Bottom Right Corner */
+    50%{
+        top:320px;                /* 400 - 80 = 320 (container height - box height) */
+        left:520px;
+        background:blue;
+    }
+
+    /* Move to Bottom Left Corner */
+    75%{
+        top:320px;
+        left:0;
+        background:yellow;
+    }
+
+    /* Return back to starting position */
+    100%{
+        top:0;
+        left:0;
+        background:red;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Parent container -->
+<div class="parent">
+
+    <!-- Moving box -->
+    <div class="child"></div>
+
+</div>
+
+</body>
+</html>
