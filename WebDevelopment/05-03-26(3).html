@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>Document</title>
+
+    <style>
+
+        /* Styling for the whole page */
+        body{
+            height: 1000px;                 /* Page height */
+            
+            /* Using flexbox to align the section */
+            display: flex;
+
+            /* Vertically center the section */
+            align-items: center;
+
+            /* Horizontally distribute space evenly */
+            justify-content: space-evenly;
+        }
+
+        /* Main container */
+        section{
+            height: 400px;                  /* Height of container */
+            width: 500px;                   /* Width of container */
+            border: 2px solid;              /* Border around container */
+
+            /* Makes this container the reference for absolute positioned children */
+            position: relative;
+        }
+
+        /* Common style for all small boxes */
+        aside{
+            height: 100px;                  /* Height of each box */
+            width: 100px;                   /* Width of each box */
+        }
+
+        /* Top Right box */
+        .child1{
+            background-color: lightgreen;   /* Green color */
+            position: absolute;             /* Position relative to section */
+            right: 0;                       /* Move to right side */
+        }
+
+        /* Bottom Right box */
+        .child2{
+            background-color: blue;         /* Blue color */
+            position: absolute;
+            right: 0;                       /* Right side */
+            bottom: 0;                      /* Bottom side */
+        }
+
+        /* Bottom Left box */
+        .child3{
+            background-color: aqua;         /* Aqua color */
+            position: absolute;
+            bottom: 0;                      /* Move to bottom */
+            left: 0;                        /* Move to left */
+        }
+
+        /* Top Left box */
+        .child4{
+            background-color: purple;       /* Purple color */
+            position: absolute;
+            left: 0;                        /* Align to left */
+        }
+
+        /* Center box */
+        .child5{
+            background-color: pink;         /* Pink color */
+            position: absolute;
+
+            /* Move box roughly to center */
+            top: 40%;
+            left: 40%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Main container -->
+    <section>
+
+        <!-- Top right box -->
+        <aside class="child1"></aside>
+
+        <!-- Bottom right box -->
+        <aside class="child2"></aside>
+
+        <!-- Bottom left box -->
+        <aside class="child3"></aside>
+
+        <!-- Top left box -->
+        <aside class="child4"></aside>
+
+        <!-- Center box -->
+        <aside class="child5"></aside>
+
+    </section>
+
+</body>
+</html>
