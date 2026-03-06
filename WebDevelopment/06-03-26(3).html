@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Character encoding -->
+<meta charset="UTF-8">
+
+<!-- Makes webpage responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title of page -->
+<title>Emoji Transition Timing</title>
+
+<style>
+
+/* Container box */
+.container{
+    height:400px;                 /* Height of container */
+    width:700px;                  /* Width of container */
+    border:3px solid black;       /* Border around container */
+
+    position:relative;            /* Makes it reference for absolute items */
+}
+
+/* Common style for all emoji items */
+.item{
+    position:absolute;            /* Allows free positioning inside container */
+
+    left:0;                       /* Starting position on left side */
+
+    font-size:22px;               /* Emoji and text size */
+
+    /* Transition properties */
+    transition-property: transform;  /* Only transform property will animate */
+
+    transition-duration:4s;          /* Animation takes 4 seconds */
+}
+
+/* Different transition timing functions */
+
+/* Linear speed (constant speed from start to end) */
+.item1{ 
+    top:20px;  
+    transition-timing-function:linear;
+}
+
+/* Ease (slow start → fast → slow end) */
+.item2{ 
+    top:100px; 
+    transition-timing-function:ease;
+}
+
+/* Ease-in (slow start → fast end) */
+.item3{ 
+    top:180px; 
+    transition-timing-function:ease-in;
+}
+
+/* Ease-out (fast start → slow end) */
+.item4{ 
+    top:260px; 
+    transition-timing-function:ease-out;
+}
+
+/* Ease-in-out (slow start → fast → slow end) */
+.item5{ 
+    top:340px; 
+    transition-timing-function:ease-in-out;
+}
+
+/* Movement when hovering over container */
+.container:hover .item{
+
+    /* Moves the items horizontally to the right */
+    transform: translateX(600px);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Main container -->
+<div class="container">
+
+<!-- Items with different timing effects -->
+<section class="item item1">🚗 Linear</section>
+<section class="item item2">🚀 Ease</section>
+<section class="item item3">🐢 Ease-in</section>
+<section class="item item4">⚡ Ease-out</section>
+<section class="item item5">🎢 Ease-in-out</section>
+
+</div>
+
+</body>
+</html>
