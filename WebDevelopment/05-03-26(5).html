@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>Document</title>
+
+    <style>
+
+        /* Universal selector (applies to all elements) */
+        * {
+        }
+
+        /* Reset default spacing of browser */
+        padding: 0;
+        margin: 0;
+
+        /* Includes border and padding in width/height calculations */
+        box-sizing: border-box;
+
+
+        /* Styling for the whole page */
+        body {
+            height: 100vh;   /* Full screen height */
+
+            /* Background image of space */
+            /* background-color: black; */
+
+            background-image: url('https://media.gettyimages.com/id/2160625813/video/flying-through-stars-and-nebula-stock-video-4k-stok-video.jpg?s=640x640&k=20&c=SdexaC58po8XH02vjwk-_8Vziey137iCcZdLgQmS_Q8=');
+
+            background-repeat: no-repeat;   /* Prevent repeating */
+            background-position: center;    /* Center the background */
+
+            /* Flexbox used to center the sun */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        /* Sun styling */
+        .sun {
+            height: 70px;
+            width: 70px;
+
+            /* Sun gradient color */
+            background: linear-gradient(orange, yellow);
+
+            border-radius: 50%;   /* Makes it circular */
+
+            /* Glow effect around sun */
+            box-shadow: 0 0 40px yellow;
+        }
+
+
+        /* Common orbit styling */
+        .orbit {
+            border: 2px dashed #ccc;  /* Dashed orbit path */
+            border-radius: 50%;       /* Circular orbit */
+        }
+
+
+        /* Mercury orbit */
+        .mercury-orbit {
+            position: absolute;
+
+            height: 120px;
+            width: 120px;
+
+            /* Rotation animation */
+            animation: mercury 15s linear infinite;
+        }
+
+
+        /* Venus orbit */
+        .venus-orbit {
+            position: absolute;
+
+            height: 220px;
+            width: 220px;
+
+            animation: venus 20s linear infinite;
+        }
+
+
+        /* Earth orbit */
+        .earth-orbit {
+            position: absolute;
+
+            height: 320px;
+            width: 320px;
+
+            animation: earth 25s linear infinite;
+        }
+
+
+        /* Mars orbit */
+        .mars-orbit {
+            position: absolute;
+
+            height: 420px;
+            width: 420px;
+
+            animation: mars 30s linear infinite;
+        }
+
+
+        /* Mercury planet */
+        .mercury {
+            height: 25px;
+            width: 25px;
+
+            border-radius: 50%;  /* Planet shape */
+
+            background-color: red;
+
+            position: absolute;
+
+            /* Distance from orbit center */
+            top: 10px;
+        }
+
+
+        /* Venus planet */
+        .venus {
+            height: 25px;
+            width: 25px;
+
+            border-radius: 50%;
+
+            background-color: yellow;
+
+            position: absolute;
+
+            top: 50px;
+        }
+
+
+        /* Earth planet */
+        .earth {
+            height: 25px;
+            width: 25px;
+
+            border-radius: 50%;
+
+            /* Blue gradient representing Earth */
+            background: linear-gradient(blue, skyblue);
+
+            position: absolute;
+
+            top: 80px;
+        }
+
+
+        /* Mars planet */
+        .mars {
+            height: 25px;
+            width: 25px;
+
+            border-radius: 50%;
+
+            /* Orange-red color like Mars */
+            background: linear-gradient(orange, maroon);
+
+            position: absolute;
+
+            top: 120px;
+        }
+
+
+        /* Mercury rotation animation */
+        @keyframes mercury {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        /* Venus rotation animation */
+        @keyframes venus {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        /* Earth rotation animation */
+        @keyframes earth {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        /* Mars rotation animation */
+        @keyframes mars {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Sun placed at center -->
+    <section class="sun"></section>
+
+
+    <!-- Mercury orbit -->
+    <article class="orbit mercury-orbit">
+        <aside class="mercury"></aside>
+    </article>
+
+
+    <!-- Venus orbit -->
+    <article class="orbit venus-orbit">
+        <aside class="venus"></aside>
+    </article>
+
+
+    <!-- Earth orbit -->
+    <article class="orbit earth-orbit">
+        <aside class="earth"></aside>
+    </article>
+
+
+    <!-- Mars orbit -->
+    <article class="orbit mars-orbit">
+        <aside class="mars"></aside>
+    </article>
+
+</body>
+</html>
