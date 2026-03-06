@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>Document</title>
+
+    <style>
+
+        /* Styling the section element */
+        section{
+
+            height: 50px;               /* Height of the animated box */
+
+            width: 50px;                /* Initial width */
+
+            /* Gradient background color */
+            background: linear-gradient(red,green,yellow);    
+
+            /* Name of the animation */
+            animation-name: task1;
+
+            /* Animation starts after 1 second delay */
+            animation-delay: 1s;
+
+            /* Speed curve of animation */
+            animation-timing-function: liner; 
+            /* (This should be 'linear', but left unchanged as requested) */
+
+            /* Animation repeats forever */
+            animation-iteration-count: infinite;
+
+            /* Animation direction (normal = start to end repeatedly) */
+            animation-direction: normal;
+
+            /* Total duration of animation */
+            animation-duration: 4s;
+        }
+
+        /* Animation keyframes */
+        @keyframes task1 {
+
+            /* Starting state */
+            0%{
+                width:0px;          /* Box starts with no width */
+            }
+
+            /* Ending state */
+            100%{
+                width:100%;         /* Box expands to full width */
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Animated section element -->
+    <section></section>
+
+</body>
+</html>
