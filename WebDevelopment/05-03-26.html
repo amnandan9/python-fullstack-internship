@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for proper text display -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>Document</title>
+
+    <style>
+
+        /* Parent container */
+        .parent{
+            height: 550px;                 /* Height of the main container */
+            width: 700px;                  /* Width of the main container */
+            border:2px solid black;        /* Border around parent container */
+
+            /* Setting position relative so that child elements 
+               with absolute position will be positioned relative to this parent */
+            position: relative;
+        }
+
+        /* Common style for all child boxes */
+        .child{
+            height: 50px;                  /* Height of each child box */
+            width: 50px;                   /* Width of each child box */
+            border:2px solid black;        /* Border for visibility */
+        }
+
+        /* First child element (Top Left Corner) */
+        .child:first-child{
+            background-color: pink;        /* Background color */
+            position: absolute;            /* Position relative to parent */
+
+            /* Since no top/left specified,
+               it stays at default top-left corner */
+        }
+
+        /* Second child element (Top Right Corner) */
+        .child:nth-child(2){
+            background-color: lime;        /* Green color */
+            position: absolute;
+            right: 0px;                    /* Aligns box to the right side */
+        }
+
+        /* Third child element (Bottom Left Corner) */
+        .child:nth-child(3){
+            background-color: rgb(215, 67, 143); /* Purple shade */
+            position: absolute;
+            bottom: 0px;                   /* Moves box to bottom */
+        }
+
+        /* Fourth child element (Bottom Right Corner) */
+        .child:nth-child(4){
+            background-color: rgb(255, 249, 131); /* Yellow shade */
+            position: absolute;
+            bottom: 0px;                   /* Bottom alignment */
+            right: 0px;                    /* Right alignment */
+        }
+
+        /* Last child element (Center Box) */
+        .child:last-child{
+            background-color: rgb(60, 238, 167); /* Cyan color */
+
+            /* Using relative positioning so it moves from its normal position */
+            position: relative;
+
+            /* Move horizontally to center */
+            left: 325px;
+
+            /* Move vertically to center */
+            top: 250px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Parent container holding all child boxes -->
+    <div class="parent">
+
+        <!-- First child box (top-left) -->
+        <aside class="child"></aside>
+
+        <!-- Second child box (top-right) -->
+        <aside class="child"></aside>
+
+        <!-- Third child box (bottom-left) -->
+        <aside class="child"></aside>
+
+        <!-- Fourth child box (bottom-right) -->
+        <aside class="child"></aside>
+
+        <!-- Fifth child box (center) -->
+        <aside class="child"></aside>
+
+    </div>
+
+</body>
+</html>
