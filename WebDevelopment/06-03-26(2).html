@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Solar System</title>
+
+<style>
+
+/* Styling the body */
+body{
+    margin:0;                    /* Removes default browser margin */
+    background:black;            /* Space-like black background */
+
+    height:100vh;                /* Full screen height */
+
+    display:flex;                /* Using flexbox */
+    justify-content:center;      /* Center horizontally */
+    align-items:center;          /* Center vertically */
+}
+
+
+/* Solar system container */
+.solar{
+    position:relative;           /* Reference container for planets */
+    width:700px;
+    height:700px;
+}
+
+
+/* Sun styling */
+.sun{
+    position:absolute;
+
+    width:90px;
+    height:90px;
+
+    /* Sun image */
+    background-image:url("https://tse4.mm.bing.net/th/id/OIP.ZbyjV-2RXMNdyyK7yO2grwHaHE?rs=1&pid=ImgDetMain&o=7&rm=3");
+
+    background-size:cover;
+
+    border-radius:50%;           /* Makes the sun circular */
+
+    /* Positioning sun at center */
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    /* Glow effect */
+    box-shadow:0 0 50px orange;
+}
+
+
+/* Orbit circle around the sun */
+.orbit{
+    position:absolute;
+
+    /* Circular orbit path */
+    border:1px solid rgba(255,255,255,0.4);
+
+    border-radius:50%;
+
+    /* Position orbit at center */
+    top:50%;
+    left:50%;
+}
+
+
+/* Planet common styling */
+.planet{
+    position:absolute;
+
+    width:25px;
+    height:25px;
+
+    border-radius:50%;       /* Circular planets */
+
+    background-size:cover;   /* Planet image covers the circle */
+}
+
+
+/* Orbit sizes and rotation speeds */
+
+/* Mercury orbit */
+.orbit1{
+    width:120px;
+    height:120px;
+
+    transform:translate(-50%,-50%);
+
+    /* Fastest rotation */
+    animation:rotate 4s linear infinite;
+}
+
+/* Venus orbit */
+.orbit2{
+    width:170px;
+    height:170px;
+
+    transform:translate(-50%,-50%);
+    animation:rotate 7s linear infinite;
+}
+
+/* Earth orbit */
+.orbit3{
+    width:220px;
+    height:220px;
+
+    transform:translate(-50%,-50%);
+    animation:rotate 10s linear infinite;
+}
+
+/* Mars orbit */
+.orbit4{
+    width:270px;
+    height:270px;
+
+    transform:translate(-50%,-50%);
+    animation:rotate 14s linear infinite;
+}
+
+/* Jupiter orbit */
+.orbit5{
+    width:330px;
+    height:330px;
+
+    transform:translate(-50%,-50%);
+    animation:rotate 18s linear infinite;
+}
+
+/* Saturn orbit */
+.orbit6{
+    width:390px;
+    height:390px;
+
+    transform:translate(-50%,-50%);
+    animation:rotate 24s linear infinite;
+}
+
+/* Uranus orbit */
+.orbit7{
+    width:450px;
+    height:450px;
+
+    transform:translate(-50%,-50%);
+    animation:rotate 30s linear infinite;
+}
+
+/* Neptune orbit */
+.orbit8{
+    width:520px;
+    height:520px;
+
+    transform:translate(-50%,-50%);
+    animation:rotate 36s linear infinite;
+}
+
+
+/* Planet placement and images */
+
+/* Mercury */
+.orbit1 .planet{
+    top:-12px;
+    left:50%;
+
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg");
+}
+
+/* Venus */
+.orbit2 .planet{
+    top:-12px;
+    left:50%;
+
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg");
+}
+
+/* Earth */
+.orbit3 .planet{
+    top:-12px;
+    left:50%;
+
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg");
+}
+
+/* Mars */
+.orbit4 .planet{
+    top:-12px;
+    left:50%;
+
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg");
+}
+
+/* Jupiter */
+.orbit5 .planet{
+    top:-12px;
+    left:50%;
+
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg");
+}
+
+/* Saturn */
+.orbit6 .planet{
+    top:-12px;
+    left:50%;
+
+    background-image:url("https://img.freepik.com/premium-photo/planet-saturn-photography_792751-11.jpg");
+}
+
+/* Uranus */
+.orbit7 .planet{
+    top:-12px;
+    left:50%;
+
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg");
+}
+
+/* Neptune */
+.orbit8 .planet{
+    top:-12px;
+    left:50%;
+
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg");
+}
+
+
+/* Rotation animation for planets */
+@keyframes rotate{
+
+    /* Start rotation */
+    from{
+        transform:translate(-50%,-50%) rotate(0deg);
+    }
+
+    /* Full rotation */
+    to{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Solar system container -->
+<div class="solar">
+
+<!-- Sun in the center -->
+<div class="sun"></div>
+
+<!-- Planet orbits with planets inside -->
+<div class="orbit orbit1"><div class="planet"></div></div>
+<div class="orbit orbit2"><div class="planet"></div></div>
+<div class="orbit orbit3"><div class="planet"></div></div>
+<div class="orbit orbit4"><div class="planet"></div></div>
+<div class="orbit orbit5"><div class="planet"></div></div>
+<div class="orbit orbit6"><div class="planet"></div></div>
+<div class="orbit orbit7"><div class="planet"></div></div>
+<div class="orbit orbit8"><div class="planet"></div></div>
+
+</div>
+
+</body>
+</html>
