@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Character encoding -->
+<meta charset="UTF-8">
+
+<!-- Makes the page responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title of webpage -->
+<title>Day Night Effect</title>
+
+<style>
+
+/* Styling the body */
+body{
+    margin:0;            /* Removes default browser margin */
+    height:100vh;        /* Full screen height */
+    overflow:hidden;     /* Prevents scrollbars */
+}
+
+
+/* Sky container */
+.sky{
+    height:100vh;        /* Full viewport height */
+    width:100vw;         /* Full viewport width */
+
+    background:lightblue; /* Initial sky color */
+
+    position:relative;    /* Makes child elements position relative to sky */
+
+    /* Animation that changes sky color */
+    animation: skychange 8s linear infinite;
+}
+
+
+/* Sun styling */
+.sun{
+    height:120px;
+    width:120px;
+
+    border-radius:50%;   /* Makes the sun circular */
+
+    position:absolute;
+
+    /* Positioning sun in center */
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    /* Animation for sun color and glow */
+    animation:sunchange 8s linear infinite;
+}
+
+
+/* Moving white circle (moon effect) */
+.moon{
+    height:120px;
+    width:120px;
+
+    background:white;     /* Moon color */
+
+    border-radius:50%;    /* Circle shape */
+
+    position:absolute;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    /* Starts outside screen from left */
+    left:-150px;
+
+    /* Moon movement animation */
+    animation:move 8s linear infinite;
+}
+
+
+/* Moon movement animation */
+@keyframes move{
+
+    /* Start from left side outside screen */
+    0%{
+        left:-150px;
+    }
+
+    /* Reach center */
+    50%{
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+
+    /* Move outside to the right */
+    100%{
+        left:110%;
+        transform:translateY(-50%);
+    }
+
+}
+
+
+/* Sky color change animation */
+@keyframes skychange{
+
+    /* Daytime sky */
+    0%{
+        background:lightblue;
+    }
+
+    /* Night sky */
+    50%{
+        background:black;
+    }
+
+    /* Back to day */
+    100%{
+        background:lightblue;
+    }
+
+}
+
+
+/* Sun color and glow change */
+@keyframes sunchange{
+
+    /* Daytime sun */
+    0%{
+        background:orange;
+        box-shadow:none;  /* No glow */
+    }
+
+    /* Nighttime (moon effect) */
+    50%{
+        background:black;
+        box-shadow:0 0 35px 15px rgba(255,255,255,0.6);
+        /* Creates glowing moon effect */
+    }
+
+    /* Back to daytime */
+    100%{
+        background:orange;
+        box-shadow:none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Sky container -->
+<div class="sky">
+
+    <!-- Sun element -->
+    <div class="sun"></div>
+
+    <!-- Moving moon element -->
+    <div class="moon"></div>
+
+</div>
+
+</body>
+</html>
