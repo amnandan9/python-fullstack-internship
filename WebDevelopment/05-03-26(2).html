@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Defines character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>Document</title>
+
+    <style>
+
+        /* Styling the body to center the animation container */
+        body{
+            height: 100vh;                 /* Full screen height */
+
+            display: flex;                 /* Enable flexbox */
+
+            align-items: center;           /* Vertical center */
+
+            justify-content: center;       /* Horizontal center */
+        }
+
+        /* Main container */
+        section{
+            height: 300px;                 /* Container height */
+            width: 500px;                  /* Container width */
+            border: 2px solid;             /* Border for visibility */
+
+            /* Makes this the reference point for absolute elements */
+            position: relative;
+        }
+
+        /* Moving box */
+        aside{
+            height: 100px;                 /* Box height */
+            width: 100px;                  /* Box width */
+
+            background-color: red;         /* Initial color */
+
+            /* Allows movement relative to the section */
+            position: absolute;
+
+            /* Applying animation */
+            animation: task2 5s infinite;
+
+            /* task2 → animation name
+               5s → animation duration
+               infinite → repeats forever */
+        }
+
+        /* Animation steps */
+        @keyframes task2{
+
+            /* Start position (Top Left Corner) */
+            0%{
+                top: 0;
+                left: 0;
+                background-color: red;
+            }
+
+            /* Move to Top Right Corner */
+            25%{
+                top: 0;
+                left: 400px;   /* 500 - 100 = 400 */
+                background-color: yellow;
+            }
+
+            /* Move to Bottom Right Corner */
+            50%{
+                top: 200px;    /* 300 - 100 = 200 */
+                left: 400px;
+                background-color: hotpink;
+            }
+
+            /* Move to Bottom Left Corner */
+            75%{
+                top: 200px;
+                left: 0;
+                background-color: aqua;
+            }
+
+            /* Return to starting position */
+            100%{
+                top: 0;
+                left: 0;
+                background-color: purple;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Container box -->
+    <section>
+
+        <!-- Animated moving square -->
+        <aside></aside>
+
+    </section>
+
+</body>
+</html>
