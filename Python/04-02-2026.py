@@ -18,7 +18,7 @@ a=8j, b=9j+56, c=34+0j '''complex'''
 '''in complex value the real and imaginary part can be inter changed but the coefficient of imaginary part cannot
 be interchanged'''
 bool(a), bool(b), bool(c)
-'''here the valu of all the bool function is true unless it is completle a default value if at all it contains the default value in them
+'''here the value of all the bool function is true unless it is completle a default value if at all it contains the default value in them
 then still it is true as it is associated with other value'''
 
 >>> a=0j+4
