@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | PandaFoodCart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .categories {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .cat-card {
+            background: white;
+            padding: 20px 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: center;
+        }
+        .cat-card:hover {
+            transform: translateY(-5px);
+            background: var(--primary-light);
+            color: var(--primary-dark);
+        }
+        .cat-card span {
+            display: block;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <div class="main-content">
+        <div class="hero">
+            <div>
+                <h1>Fresh Food, Delivered<br>To Your Doorstep</h1>
+                <p style="font-size: 20px; margin-bottom: 30px; opacity: 0.9;">Choose from a wide variety of delicious meals.</p>
+                <button class="btn btn-primary" style="width: auto; padding: 15px 30px; font-size: 18px;" onclick="window.location.href='menu.html'">Order Now</button>
+            </div>
+        </div>
+
+        <h2 style="text-align: center;">Our Categories</h2>
+        <div class="categories" id="homeCategories">
+            <div class="cat-card" onclick="window.location.href='menu.html'">
+                <span>🍕</span> Pizza
+            </div>
+            <div class="cat-card" onclick="window.location.href='menu.html'">
+                <span>🍔</span> Burger
+            </div>
+            <div class="cat-card" onclick="window.location.href='menu.html'">
+                <span>🍗</span> Chicken
+            </div>
+            <div class="cat-card" onclick="window.location.href='menu.html'">
+                <span>🍰</span> Dessert
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="js/common.js"></script>
+</body>
+</html>
