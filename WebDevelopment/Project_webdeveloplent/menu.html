@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | PandaFoodCart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 800px;
+            margin: 20px auto;
+            flex-wrap: wrap;
+        }
+        .search-bar input, .search-bar select {
+            padding: 15px 20px;
+            border-radius: 25px;
+            border: 2px solid #ddd;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            background: white;
+            outline: none;
+        }
+        .search-bar input {
+            flex: 1;
+            min-width: 200px;
+        }
+        .search-bar select {
+            min-width: 150px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <div class="main-content">
+        <h2 style="text-align: center;">Our Delicious Menu</h2>
+        
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for your favorite food...">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="pizza">Pizza</option>
+                <option value="burger">Burger</option>
+                <option value="chicken">Chicken</option>
+                <option value="dessert">Dessert</option>
+            </select>
+            <select id="priceFilter">
+                <option value="all">All Prices</option>
+                <option value="low">Below ₹100</option>
+                <option value="mid">₹100–₹200</option>
+                <option value="high">Above ₹200</option>
+            </select>
+        </div>
+
+        <div class="grid" id="foodContainer">
+            <!-- Food items will be injected here by menu.js -->
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="js/common.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
